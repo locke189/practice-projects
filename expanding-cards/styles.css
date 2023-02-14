@@ -1,0 +1,42 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  flex-shrink: 1;
+}
+
+li {
+  flex-basis: 20%;
+  border-radius: 40px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  width: 10vw;
+}
+
+li:focus {
+  flex-basis: 100%;
+  width: 70vw;
+}
+
+li:focus > img {
+  transform: translateX(-30px);
+}
+
+img {
+  aspect-ratio: 1.77;
+  width: 70vw;
+  object-fit: cover;
+  object-position: center;
+  transition: all 1s ease-in-out;
+}
